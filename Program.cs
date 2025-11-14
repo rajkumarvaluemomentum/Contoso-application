@@ -30,11 +30,11 @@ builder.Services.AddHttpClient<GitHubService>()
     .ConfigureHttpClient((serviceProvider, httpClient) =>
     {
         // This allows GitHubService to use the injected HttpClient (with default configuration)
-        httpClient.DefaultRequestHeaders.Add("User-Agent", "VirtualAssistantAPI");
+        httpClient.DefaultRequestHeaders.Add("User-Agent", "Contoso-Application");
     });
 
-// Register KnowledgeSourceService if needed (assuming it's part of your services)
-builder.Services.AddScoped<KnowledgeSourceService>();
+builder.Services.AddScoped<DeploymentService>();
+
 
 var app = builder.Build();
 

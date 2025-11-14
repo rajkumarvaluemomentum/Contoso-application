@@ -1,6 +1,10 @@
+using Contoso_application.Models;
 using Microsoft.AspNetCore.Mvc;
-using VirtualAssistant.API.Services;
+using Octokit;
+using System.Reflection.Metadata;
 using VirtualAssistant.API.Models;
+using VirtualAssistant.API.Services;
+using static VirtualAssistant.API.Services.GitHubService;
 
 namespace VirtualAssistant.API.Controllers
 {
@@ -13,16 +17,17 @@ namespace VirtualAssistant.API.Controllers
     public class GitHubController : ControllerBase
     {
         private readonly GitHubService _gitHubService;
-        private readonly KnowledgeSourceService _knowledgeService;
         private readonly ILogger<GitHubController> _logger;
+        private readonly DeploymentService _deploymentService;
 
-        public GitHubController(GitHubService gitHubService, KnowledgeSourceService knowledgeService, ILogger<GitHubController> logger)
+        public GitHubController(GitHubService gitHubService, ILogger<GitHubController> logger, DeploymentService deploymentService)
         {
             _gitHubService = gitHubService;
-            _knowledgeService = knowledgeService;
             _logger = logger;
+            _deploymentService = deploymentService;
         }
 
+        #region Get all repositories from github
         [HttpGet("repositories")]
         public async Task<IActionResult> GetRepositories()
         {
@@ -40,315 +45,215 @@ namespace VirtualAssistant.API.Controllers
                 return StatusCode(502, new { error = ex.Message });
             }
         }
+        #endregion
 
-        [HttpGet("repositories/{repoName}/deployments")]
-        public async Task<IActionResult> GetDeployments(string repoName)
+        #region GetRepositoryLink by repository name
+        // Endpoint to fetch a specific repository link by passing the repository name
+        // Endpoint to fetch a specific repository link by passing the repository name
+        [HttpGet("GetRepositoryLink/{repoName}")]
+        public async Task<IActionResult> GetRepositoryLink(string repoName)
         {
-            try
+            if (string.IsNullOrEmpty(repoName))
             {
-                var deployments = await _gitHubService.GetDeploymentsAsync(repoName);
-                return Ok(deployments);
+                return BadRequest("Repository name cannot be null or empty.");
             }
-            catch (UnauthorizedAccessException ex)
+
+            // Check if the repository exists
+            var repoLink = await _gitHubService.GetRepositoryLinkAsync(repoName);
+
+            if (repoLink == null)
             {
-                return Unauthorized(new { error = ex.Message });
+                return NotFound($"Repository '{repoName}' not found on GitHub.");
             }
-            catch (HttpRequestException ex)
-            {
-                return StatusCode(502, new { error = ex.Message });
-            }
+
+            // Return the simplified structure with only "result" and "id"
+            return Ok(new { RepoName = repoName, RepoLink = repoLink });
+        }
+        #endregion
+
+
+        #region // Unified endpoint to fetch deployment URLs for a given repository
+        [HttpGet("deployment-urls/{repositoryName}")]
+        public IActionResult GetDeploymentUrlsForRepository(string repositoryName)
+        {
+            if (string.IsNullOrEmpty(repositoryName))
+                return BadRequest("Repository name must be provided.");
+
+            var deploymentDetails = _deploymentService.GetStaticDeploymentUrls();
+
+            if (deploymentDetails == null)
+                return NotFound($"Deployment details for repository '{repositoryName}' not found.");
+
+            return Ok(deploymentDetails);
         }
 
+        #endregion modules , microservices list,module that handles document upload
+        //GET /api/github/query?applicationName=Contoso-application&query=microservices
         /// <summary>
-        /// Get enhanced repository information with knowledge base integration
-        /// Returns repository metadata along with deployment URLs and configuration
+        /// For Contoso application I need the list of modules.”
+        //“For Contoso application I need the module that handles document upload.”
+        //“For Contoso application I need the microservices list
         /// </summary>
-        [HttpGet("repositories/{repoName}/info")]
-        public IActionResult GetRepositoryInfo(string repoName)
+        /// <param name="applicationName"></param>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("getModulesByRepoName")]
+        public async Task<IActionResult> getModulesByRepoName([FromQuery] string applicationName, [FromQuery] string query)
         {
-            try
-            {
-                var repoLink = _knowledgeService.GetRepositoryLink(repoName);
-                return Ok(new
-                {
-                    success = true,
-                    repository = repoName,
-                    data = repoLink,
-                    message = $"Retrieved complete repository information for {repoName}"
-                });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error retrieving repository info for {repoName}");
-                return StatusCode(500, new { error = ex.Message });
-            }
+            if (string.IsNullOrWhiteSpace(applicationName))
+                return BadRequest("Application name cannot be empty.");
+
+            if (string.IsNullOrWhiteSpace(query))
+                return BadRequest("Query cannot be empty.");
+
+            var data = await _gitHubService.GetApplicationStructure(applicationName);
+
+            if (data == null)
+                return NotFound($"Application '{applicationName}' not found in GitHub.");
+
+            query = query.ToLower();
+
+            if (query.Contains("modules"))
+                return Ok(data.Modules);
+
+            if (query.Contains("document"))
+                return Ok(data.DocumentUploadModule);
+
+            if (query.Contains("microservices"))
+                return Ok(data.Microservices);
+
+            return BadRequest("Unknown query. Try: modules, document upload, microservices.");
         }
 
-        /// <summary>
-        /// Get repository with deployment URLs
-        /// Combines GitHub repository info with deployment information from knowledge base
-        /// </summary>
-        [HttpGet("repositories/{repoName}/with-deployments")]
-        public async Task<IActionResult> GetRepositoryWithDeployments(string repoName)
-        {
-            try
-            {
-                // Get deployments from GitHub
-                var deployments = await _gitHubService.GetDeploymentsAsync(repoName);
-                
-                // Get repository link with URLs from knowledge base
-                var repoLink = _knowledgeService.GetRepositoryLink(repoName);
 
-                return Ok(new
-                {
-                    success = true,
-                    repository = repoName,
-                    gitHubDeployments = deployments,
-                    deploymentUrls = repoLink.DeploymentUrls,
-                    repositoryLink = new
-                    {
-                        gitHubUrl = repoLink.GitHubUrl,
-                        gitLabUrl = repoLink.GitLabUrl,
-                        documentationUrl = repoLink.DocumentationUrl,
-                        owner = repoLink.Owner,
-                        defaultBranch = repoLink.DefaultBranch
-                    },
-                    message = "Retrieved repository with deployment information"
-                });
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                _logger.LogError(ex, "GitHub authentication failed");
-                return Unauthorized(new { error = ex.Message });
-            }
-            catch (HttpRequestException ex)
-            {
-                _logger.LogError(ex, "GitHub API request failed");
-                return StatusCode(502, new { error = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error retrieving repository with deployments");
-                return StatusCode(500, new { error = ex.Message });
-            }
+        /// <summary>
+        //GET /api/github-endpoints/actions? repoName = Contoso - Application & controllerName =GithubController
+        /// </summary>
+        /// <param name="applicationName"></param>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("GetApiEndpointsByreponame")]
+        public async Task<IActionResult> GetApiEndpointsByreponame(
+        [FromQuery] string repoName,
+        [FromQuery] string controllerName)
+        {
+            if (string.IsNullOrEmpty(repoName) || string.IsNullOrEmpty(controllerName))
+                return BadRequest("repoName and controllerName are required.");
+
+            var result = await _gitHubService.GetEndpoints(repoName, controllerName);
+
+            if (result.Count == 0)
+                return NotFound("No controller or action methods found.");
+
+            return Ok(result);
         }
 
-        /// <summary>
-        /// Get all repositories with their deployment information
-        /// Lists all user repositories with corresponding deployment URLs from knowledge base
-        /// </summary>
-        [HttpGet("all-repositories-with-info")]
-        public async Task<IActionResult> GetAllRepositoriesWithInfo()
+
+        [HttpGet("settings")]
+        public async Task<IActionResult> GetSettings([FromQuery] string repoName, [FromQuery] string query)
         {
-            try
-            {
-                var repos = await _gitHubService.GetRepositoriesAsync();
-                var reposWithInfo = new List<object>();
+            if (string.IsNullOrEmpty(repoName) || string.IsNullOrEmpty(query))
+                return BadRequest("repoName and query are required.");
 
-                foreach (var repoName in repos)
-                {
-                    var repoLink = _knowledgeService.GetRepositoryLink(repoName);
-                    reposWithInfo.Add(new
-                    {
-                        repositoryName = repoName,
-                        gitHubUrl = repoLink.GitHubUrl,
-                        gitLabUrl = repoLink.GitLabUrl,
-                        documentationUrl = repoLink.DocumentationUrl,
-                        deploymentUrls = repoLink.DeploymentUrls,
-                        owner = repoLink.Owner,
-                        defaultBranch = repoLink.DefaultBranch,
-                        lastUpdated = repoLink.LastUpdated
-                    });
-                }
+            AppConfiguration? config;
 
-                return Ok(new
-                {
-                    success = true,
-                    count = reposWithInfo.Count,
-                    repositories = reposWithInfo,
-                    message = $"Retrieved {reposWithInfo.Count} repositories with information"
-                });
-            }
-            catch (UnauthorizedAccessException ex)
+            query = query.ToLower();
+
+            if (query.Contains("prod"))
+                config = await _gitHubService.GetConfiguration(repoName, "prod");
+            else if (query.Contains("uat"))
+                config = await _gitHubService.GetConfiguration(repoName, "uat");
+            else
+                config = await _gitHubService.GetConfiguration(repoName, "default");
+
+            if (config == null)
+                return NotFound("Configuration file not found.");
+
+            // Optionally filter API base URL
+            if (query.Contains("api base url"))
             {
-                _logger.LogError(ex, "GitHub authentication failed");
-                return Unauthorized(new { error = ex.Message });
+                var baseUrl = config.Settings.FirstOrDefault(kv => kv.Key.ToLower().Contains("baseurl")).Value;
+                return Ok(new { ApiBaseUrl = baseUrl });
             }
-            catch (HttpRequestException ex)
-            {
-                _logger.LogError(ex, "GitHub API request failed");
-                return StatusCode(502, new { error = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error retrieving repositories with information");
-                return StatusCode(500, new { error = ex.Message });
-            }
+
+            return Ok(config.Settings);
         }
 
-        /// <summary>
-        /// Get deployment status and environment information
-        /// Retrieves deployment status from GitHub and environment URLs from knowledge base
-        /// </summary>
-        [HttpGet("repositories/{repoName}/deployment-status")]
-        public async Task<IActionResult> GetDeploymentStatus(string repoName)
+        [HttpGet("GetConfigFiles")]
+        public async Task<IActionResult> GetConfigFiles([FromQuery] string repoName)
         {
-            try
-            {
-                var buildStatus = await _knowledgeService.GetBuildStatusAsync(repoName);
-                var deploymentUrls = _knowledgeService.GetAllDeployments(repoName);
+            if (string.IsNullOrEmpty(repoName))
+                return BadRequest("repoName is required.");
 
-                return Ok(new
-                {
-                    success = true,
-                    repository = repoName,
-                    buildStatus = buildStatus,
-                    deploymentEnvironments = deploymentUrls,
-                    message = "Retrieved deployment status and environment information"
-                });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error retrieving deployment status for {repoName}");
-                return StatusCode(500, new { error = ex.Message });
-            }
+            var files = await _gitHubService.GetConfigFiles(repoName);
+
+            if (!files.Any())
+                return NotFound("No configuration files found in the repository.");
+
+            return Ok(files);
         }
 
-        /// <summary>
-        /// Get repository deployment by environment
-        /// Retrieves specific deployment URL for the requested environment
-        /// </summary>
-        [HttpGet("repositories/{repoName}/environment/{environment}/url")]
-        public IActionResult GetEnvironmentDeploymentUrl(string repoName, string environment)
-        {
-            try
-            {
-                var url = _knowledgeService.GetDeploymentUrl(repoName, environment);
-                
-                if (url == "Not found")
-                {
-                    return NotFound(new
-                    {
-                        success = false,
-                        repository = repoName,
-                        environment = environment,
-                        message = $"No deployment URL found for {environment} environment"
-                    });
-                }
 
-                return Ok(new
-                {
-                    success = true,
-                    repository = repoName,
-                    environment = environment,
-                    url = url,
-                    message = $"Retrieved {environment} deployment URL for {repoName}"
-                });
-            }
-            catch (Exception ex)
+        //GET /api/github-code/snippet?repoName=Contoso-App&query=document upload
+
+        [HttpGet("snippet")]
+        public async Task<IActionResult> GetSnippet([FromQuery] string repoName, [FromQuery] string query)
+        {
+            if (string.IsNullOrEmpty(repoName) || string.IsNullOrEmpty(query))
+                return BadRequest("repoName and query are required.");
+
+            // Map natural-language queries to keyword
+            string keyword = query.ToLower() switch
             {
-                _logger.LogError(ex, $"Error retrieving deployment URL for {repoName} - {environment}");
-                return StatusCode(500, new { error = ex.Message });
-            }
+                var s when s.Contains("document upload") => "Upload",
+                var s when s.Contains("quote api") => "QuoteController",
+                var s when s.Contains("sample request payload") => "SampleRequest",
+                _ => query
+            };
+
+            var snippets = await _gitHubService.SearchCodeSnippets(repoName, keyword);
+
+            if (!snippets.Any())
+                return NotFound("No code snippet found matching the query.");
+
+            return Ok(snippets);
+        }
+        // GET /api/contoso/repo-details?repoName=Contoso-App
+
+        [HttpGet("repo-details")]
+        public async Task<IActionResult> GetRepoDetails([FromQuery] string repoName)
+        {
+            var details = await _gitHubService.GetRepoDetails(repoName);
+            if (details == null) return NotFound("Repository not found");
+            return Ok(details);
+        }
+        // GET /api/contoso/latest-build?repoName=Contoso-App
+
+        [HttpGet("latest-build")]
+        public async Task<IActionResult> GetLatestBuild([FromQuery] string repoName)
+        {
+            var build = await _gitHubService.GetLatestBuildStatus(repoName);
+            if (build == null) return NotFound("Build info not found");
+            return Ok(build);
         }
 
-        /// <summary>
-        /// Search repositories by name pattern
-        /// Searches through all repositories and returns matching ones with their information
-        /// </summary>
-        [HttpGet("search-repositories")]
-        public async Task<IActionResult> SearchRepositories([FromQuery] string pattern)
+        // GET /api/contoso/deployment-url?repoName=Contoso-App&environment=UAT
+
+        [HttpGet("deployment-url")]
+        public IActionResult GetDeploymentUrl([FromQuery] string repoName, [FromQuery] string environment)
         {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(pattern))
-                {
-                    return BadRequest(new { error = "Pattern parameter is required" });
-                }
-
-                var repos = await _gitHubService.GetRepositoriesAsync();
-                var matchingRepos = repos.Where(r => r.Contains(pattern, StringComparison.OrdinalIgnoreCase)).ToList();
-
-                var results = new List<object>();
-                foreach (var repoName in matchingRepos)
-                {
-                    var repoLink = _knowledgeService.GetRepositoryLink(repoName);
-                    results.Add(new
-                    {
-                        repositoryName = repoName,
-                        gitHubUrl = repoLink.GitHubUrl,
-                        deploymentUrls = repoLink.DeploymentUrls.Select(d => new { d.Environment, d.Url, d.Status })
-                    });
-                }
-
-                return Ok(new
-                {
-                    success = true,
-                    pattern = pattern,
-                    matchCount = results.Count,
-                    repositories = results,
-                    message = $"Found {results.Count} repositories matching pattern '{pattern}'"
-                });
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                _logger.LogError(ex, "GitHub authentication failed");
-                return Unauthorized(new { error = ex.Message });
-            }
-            catch (HttpRequestException ex)
-            {
-                _logger.LogError(ex, "GitHub API request failed");
-                return StatusCode(502, new { error = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error searching repositories");
-                return StatusCode(500, new { error = ex.Message });
-            }
+            var deployment = _gitHubService.GetDeploymentUrl(repoName, environment);
+            if (deployment == null) return NotFound("Deployment URL not found");
+            return Ok(deployment);
         }
+        // GET /api/contoso/service-health?serviceName=QuoteService
 
-        /// <summary>
-        /// Get repository configuration and metadata
-        /// Returns complete repository configuration including branches, deployment info, and settings
-        /// </summary>
-        [HttpGet("repositories/{repoName}/configuration")]
-        public IActionResult GetRepositoryConfiguration(string repoName)
+        [HttpGet("service-health")]
+        public IActionResult GetServiceHealth([FromQuery] string serviceName)
         {
-            try
-            {
-                var repoLink = _knowledgeService.GetRepositoryLink(repoName);
-                var configs = _knowledgeService.GetConfigurations();
-
-                return Ok(new
-                {
-                    success = true,
-                    repository = repoName,
-                    repositoryInfo = new
-                    {
-                        name = repoLink.RepositoryName,
-                        owner = repoLink.Owner,
-                        gitHubUrl = repoLink.GitHubUrl,
-                        gitLabUrl = repoLink.GitLabUrl,
-                        defaultBranch = repoLink.DefaultBranch,
-                        documentationUrl = repoLink.DocumentationUrl
-                    },
-                    deploymentEnvironments = repoLink.DeploymentUrls.Select(d => new
-                    {
-                        d.Environment,
-                        d.Url,
-                        d.Status,
-                        d.BuildStatus,
-                        d.LastDeployed
-                    }),
-                    configuration = configs.Where(c => c.Environment == "All" || c.Environment == "Production").ToList(),
-                    message = $"Retrieved configuration for {repoName}"
-                });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error retrieving repository configuration for {repoName}");
-                return StatusCode(500, new { error = ex.Message });
-            }
+            var health = _gitHubService.GetServiceHealth(serviceName);
+            return Ok(health);
         }
     }
 }
+  
