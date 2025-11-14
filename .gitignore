@@ -1,0 +1,66 @@
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Publish output
+*.Publish.xml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific files
+*.swp
+*.vscode/
+
+# Logs
+*.log
+
+# Certificates
+*.pfx
+
+# Local appsettings (do not commit secrets)
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+
+# dotnet user secrets (global storage location - not inside repo but just in case)
+%APPDATA%\Microsoft\UserSecrets\*
+
+# npm
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# Mac/Unix
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Ignore published directories
+publish/
+
+# Ignore package folders
+*.nupkg
+
+# Temporary files
+*.tmp
+
+# Ensure we don't accidentally commit the PAT again
+**/*appsettings*.json
+
