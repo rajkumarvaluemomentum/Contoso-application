@@ -1,0 +1,666 @@
+2025-11-15 07:55:25.684 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-15 07:55:26.549 +00:00 [DBG] Hosting starting
+2025-11-15 07:55:26.586 +00:00 [DBG] Middleware loaded
+2025-11-15 07:55:26.591 +00:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16523 B).
+2025-11-15 07:55:26.592 +00:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-15 07:55:28.139 +00:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-15 07:55:28.359 +00:00 [INF] Now listening on: https://localhost:7206
+2025-11-15 07:55:28.359 +00:00 [INF] Now listening on: http://localhost:5206
+2025-11-15 07:55:28.360 +00:00 [DBG] Loaded hosting startup assembly Contoso application
+2025-11-15 07:55:28.360 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-15 07:55:28.360 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-15 07:55:28.360 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-15 07:55:28.459 +00:00 [DBG] Connection id "0HNH43HBTDVJD" accepted.
+2025-11-15 07:55:28.462 +00:00 [DBG] Connection id "0HNH43HBTDVJE" received FIN.
+2025-11-15 07:55:28.464 +00:00 [DBG] Connection id "0HNH43HBTDVJD" received FIN.
+2025-11-15 07:55:28.472 +00:00 [DBG] Connection id "0HNH43HBTDVJE" accepted.
+2025-11-15 07:55:28.479 +00:00 [DBG] Connection id "0HNH43HBTDVJD" started.
+2025-11-15 07:55:28.480 +00:00 [DBG] Connection id "0HNH43HBTDVJE" started.
+2025-11-15 07:55:28.531 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-15 07:55:28.531 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-15 07:55:29.497 +00:00 [DBG] Connection id "0HNH43HBTDVJE" stopped.
+2025-11-15 07:55:29.497 +00:00 [DBG] Connection id "0HNH43HBTDVJD" stopped.
+2025-11-15 07:55:29.522 +00:00 [DBG] Connection id "0HNH43HBTDVJD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:55:29.522 +00:00 [DBG] Connection id "0HNH43HBTDVJE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:55:30.382 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-15 07:55:30.383 +00:00 [INF] Hosting environment: Development
+2025-11-15 07:55:30.383 +00:00 [INF] Content root path: C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main
+2025-11-15 07:55:30.383 +00:00 [DBG] Hosting started
+2025-11-15 07:55:30.487 +00:00 [DBG] Connection id "0HNH43HBTDVJF" accepted.
+2025-11-15 07:55:30.585 +00:00 [DBG] Connection id "0HNH43HBTDVJG" accepted.
+2025-11-15 07:55:30.590 +00:00 [DBG] Connection id "0HNH43HBTDVJF" started.
+2025-11-15 07:55:30.593 +00:00 [DBG] Connection id "0HNH43HBTDVJG" started.
+2025-11-15 07:55:30.690 +00:00 [DBG] Connection id "0HNH43HBTDVJG" received FIN.
+2025-11-15 07:55:30.705 +00:00 [DBG] Connection 0HNH43HBTDVJF established using the following protocol: "Tls13"
+2025-11-15 07:55:30.706 +00:00 [DBG] Connection 0HNH43HBTDVJG established using the following protocol: "Tls13"
+2025-11-15 07:55:30.944 +00:00 [DBG] Connection id "0HNH43HBTDVJG" is closed. The last processed stream ID was 0.
+2025-11-15 07:55:30.959 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJG completed.
+2025-11-15 07:55:30.962 +00:00 [DBG] Connection id "0HNH43HBTDVJG" stopped.
+2025-11-15 07:55:30.967 +00:00 [DBG] Connection id "0HNH43HBTDVJG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:55:31.168 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-11-15 07:55:31.168 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-15 07:55:31.302 +00:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-15 07:55:31.310 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 181.814ms
+2025-11-15 07:55:31.901 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 775.3891ms
+2025-11-15 07:55:32.149 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-11-15 07:55:32.166 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-15 07:55:32.469 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-15 07:55:32.470 +00:00 [DBG] Request did not match any endpoints
+2025-11-15 07:55:32.555 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 52.7176 ms
+2025-11-15 07:55:32.564 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 415.0663ms
+2025-11-15 07:55:32.773 +00:00 [DBG] Connection id "0HNH43HBTDVJF" received FIN.
+2025-11-15 07:55:32.779 +00:00 [DBG] Connection id "0HNH43HBTDVJF" is closed. The last processed stream ID was 5.
+2025-11-15 07:55:32.780 +00:00 [DBG] Connection id "0HNH43HBTDVJF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:55:32.836 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJF completed.
+2025-11-15 07:55:32.837 +00:00 [DBG] Connection id "0HNH43HBTDVJF" stopped.
+2025-11-15 07:55:41.009 +00:00 [DBG] Connection id "0HNH43HBTDVJH" accepted.
+2025-11-15 07:55:41.016 +00:00 [DBG] Connection id "0HNH43HBTDVJH" started.
+2025-11-15 07:55:41.026 +00:00 [DBG] Connection 0HNH43HBTDVJH established using the following protocol: "Tls13"
+2025-11-15 07:55:41.031 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/repositories - null null
+2025-11-15 07:55:41.060 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/repositories'
+2025-11-15 07:55:41.073 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application)' with route pattern 'api/GitHub/repositories' is valid for the request path '/api/GitHub/repositories'
+2025-11-15 07:55:41.075 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application)'
+2025-11-15 07:55:41.103 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application)'
+2025-11-15 07:55:41.225 +00:00 [INF] Route matched with {action = "GetRepositories", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRepositories() on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:55:41.229 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:55:41.230 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:55:41.230 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:55:41.230 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:55:41.231 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:55:41.234 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:55:41.281 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:55:41.302 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application) - Validation state: "Valid"
+2025-11-15 07:55:41.319 +00:00 [INF] Start processing HTTP request GET https://api.github.com/users/rajkumarvaluemomentum/repos
+2025-11-15 07:55:41.328 +00:00 [INF] Sending HTTP request GET https://api.github.com/users/rajkumarvaluemomentum/repos
+2025-11-15 07:55:41.625 +00:00 [INF] Received HTTP response headers after 292.7539ms - 200
+2025-11-15 07:55:41.627 +00:00 [INF] End processing HTTP request after 313.5888ms - 200
+2025-11-15 07:55:41.657 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 349.1321ms.
+2025-11-15 07:55:41.667 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:55:41.671 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:55:41.671 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:55:41.671 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:55:41.673 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:55:41.673 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-15 07:55:41.687 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application) in 451.714ms
+2025-11-15 07:55:41.689 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositories (Contoso application)'
+2025-11-15 07:55:41.690 +00:00 [INF] HTTP GET /api/GitHub/repositories responded 200 in 610.9142 ms
+2025-11-15 07:55:41.690 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/repositories - 200 null application/json; charset=utf-8 659.7192ms
+2025-11-15 07:55:42.699 +00:00 [DBG] Connection id "0HNH43HBTDVJH" received FIN.
+2025-11-15 07:55:42.700 +00:00 [DBG] Connection id "0HNH43HBTDVJH" is closed. The last processed stream ID was 1.
+2025-11-15 07:55:42.700 +00:00 [DBG] Connection id "0HNH43HBTDVJH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:55:42.700 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJH completed.
+2025-11-15 07:55:42.702 +00:00 [DBG] Connection id "0HNH43HBTDVJH" stopped.
+2025-11-15 07:55:58.770 +00:00 [DBG] Connection id "0HNH43HBTDVJI" accepted.
+2025-11-15 07:55:58.771 +00:00 [DBG] Connection id "0HNH43HBTDVJI" started.
+2025-11-15 07:55:58.781 +00:00 [DBG] Connection 0HNH43HBTDVJI established using the following protocol: "Tls13"
+2025-11-15 07:55:58.789 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/GetConfigFiles?repoName=contoso-application - null null
+2025-11-15 07:55:58.794 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/GetConfigFiles'
+2025-11-15 07:55:58.794 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application)' with route pattern 'api/GitHub/GetConfigFiles' is valid for the request path '/api/GitHub/GetConfigFiles'
+2025-11-15 07:55:58.794 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application)'
+2025-11-15 07:55:58.797 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application)'
+2025-11-15 07:55:58.820 +00:00 [INF] Route matched with {action = "GetConfigFiles", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetConfigFiles(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:55:58.820 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:55:58.820 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:55:58.820 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:55:58.821 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:55:58.821 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:55:58.821 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:55:58.822 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:55:58.865 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:55:58.869 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-15 07:55:58.871 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:55:58.871 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:55:58.871 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:55:58.876 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-15 07:55:58.878 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application) - Validation state: "Valid"
+2025-11-15 07:55:58.890 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/
+2025-11-15 07:55:58.890 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/
+2025-11-15 07:55:59.032 +00:00 [INF] Received HTTP response headers after 141.8758ms - 200
+2025-11-15 07:55:59.033 +00:00 [INF] End processing HTTP request after 142.3436ms - 200
+2025-11-15 07:55:59.054 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 175.7325ms.
+2025-11-15 07:55:59.054 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:55:59.054 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:55:59.054 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:55:59.054 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:55:59.054 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-15 07:55:59.054 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-11-15 07:55:59.055 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application) in 234.0052ms
+2025-11-15 07:55:59.055 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetConfigFiles (Contoso application)'
+2025-11-15 07:55:59.055 +00:00 [INF] HTTP GET /api/GitHub/GetConfigFiles responded 404 in 258.9591 ms
+2025-11-15 07:55:59.055 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/GetConfigFiles?repoName=contoso-application - 404 null text/plain; charset=utf-8 265.9137ms
+2025-11-15 07:56:02.702 +00:00 [DBG] Connection id "0HNH43HBTDVJI" received FIN.
+2025-11-15 07:56:02.703 +00:00 [DBG] Connection id "0HNH43HBTDVJI" is closed. The last processed stream ID was 1.
+2025-11-15 07:56:02.703 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJI completed.
+2025-11-15 07:56:02.703 +00:00 [DBG] Connection id "0HNH43HBTDVJI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:56:02.704 +00:00 [DBG] Connection id "0HNH43HBTDVJI" stopped.
+2025-11-15 07:56:28.050 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" accepted.
+2025-11-15 07:56:28.053 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" started.
+2025-11-15 07:56:28.065 +00:00 [DBG] Connection 0HNH43HBTDVJJ established using the following protocol: "Tls13"
+2025-11-15 07:56:28.083 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/snippet?repoName=contoso-application&query=models - null null
+2025-11-15 07:56:28.084 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/snippet'
+2025-11-15 07:56:28.084 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application)' with route pattern 'api/GitHub/snippet' is valid for the request path '/api/GitHub/snippet'
+2025-11-15 07:56:28.084 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application)'
+2025-11-15 07:56:28.084 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application)'
+2025-11-15 07:56:28.092 +00:00 [INF] Route matched with {action = "GetSnippet", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSnippet(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:56:28.092 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:56:28.092 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:56:28.092 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:56:28.092 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:56:28.092 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:56:28.092 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:56:28.095 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:56:28.096 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:56:28.096 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-15 07:56:28.096 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:28.096 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:28.096 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:56:28.097 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:28.097 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-11-15 07:56:28.097 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-11-15 07:56:28.097 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 07:56:28.097 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 07:56:28.097 +00:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-11-15 07:56:28.097 +00:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-11-15 07:56:28.097 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application) - Validation state: "Valid"
+2025-11-15 07:56:28.103 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/
+2025-11-15 07:56:28.103 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/
+2025-11-15 07:56:28.244 +00:00 [INF] Received HTTP response headers after 140.9357ms - 200
+2025-11-15 07:56:28.245 +00:00 [INF] End processing HTTP request after 141.2957ms - 200
+2025-11-15 07:56:28.248 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Controllers
+2025-11-15 07:56:28.249 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Controllers
+2025-11-15 07:56:28.401 +00:00 [INF] Received HTTP response headers after 152.3906ms - 200
+2025-11-15 07:56:28.402 +00:00 [INF] End processing HTTP request after 153.9638ms - 200
+2025-11-15 07:56:28.403 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Data
+2025-11-15 07:56:28.403 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Data
+2025-11-15 07:56:28.553 +00:00 [INF] Received HTTP response headers after 149.6619ms - 200
+2025-11-15 07:56:28.553 +00:00 [INF] End processing HTTP request after 149.982ms - 200
+2025-11-15 07:56:28.554 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Models
+2025-11-15 07:56:28.554 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Models
+2025-11-15 07:56:28.681 +00:00 [INF] Received HTTP response headers after 127.0939ms - 200
+2025-11-15 07:56:28.681 +00:00 [INF] End processing HTTP request after 127.4062ms - 200
+2025-11-15 07:56:28.683 +00:00 [INF] Start processing HTTP request GET https://raw.githubusercontent.com/rajkumarvaluemomentum/Contoso-application/master/Models/KnowledgeBaseModels.cs
+2025-11-15 07:56:28.683 +00:00 [INF] Sending HTTP request GET https://raw.githubusercontent.com/rajkumarvaluemomentum/Contoso-application/master/Models/KnowledgeBaseModels.cs
+2025-11-15 07:56:28.982 +00:00 [INF] Received HTTP response headers after 298.6087ms - 200
+2025-11-15 07:56:28.982 +00:00 [INF] End processing HTTP request after 299.1039ms - 200
+2025-11-15 07:56:28.986 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Properties
+2025-11-15 07:56:28.986 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Properties
+2025-11-15 07:56:29.098 +00:00 [INF] Received HTTP response headers after 112.0454ms - 200
+2025-11-15 07:56:29.103 +00:00 [INF] End processing HTTP request after 116.8791ms - 200
+2025-11-15 07:56:29.104 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Properties/PublishProfiles
+2025-11-15 07:56:29.104 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Properties/PublishProfiles
+2025-11-15 07:56:29.243 +00:00 [INF] Received HTTP response headers after 135.9536ms - 200
+2025-11-15 07:56:29.243 +00:00 [INF] End processing HTTP request after 139.1648ms - 200
+2025-11-15 07:56:29.243 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Services
+2025-11-15 07:56:29.244 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/contents/Services
+2025-11-15 07:56:29.369 +00:00 [INF] Received HTTP response headers after 125.2918ms - 200
+2025-11-15 07:56:29.369 +00:00 [INF] End processing HTTP request after 125.9816ms - 200
+2025-11-15 07:56:29.370 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1272.6964ms.
+2025-11-15 07:56:29.371 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:56:29.371 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:56:29.371 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:56:29.371 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:56:29.371 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:56:29.371 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CodeSnippet, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-15 07:56:29.384 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application) in 1291.6834ms
+2025-11-15 07:56:29.384 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetSnippet (Contoso application)'
+2025-11-15 07:56:29.384 +00:00 [INF] HTTP GET /api/GitHub/snippet responded 200 in 1300.2620 ms
+2025-11-15 07:56:29.384 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/snippet?repoName=contoso-application&query=models - 200 null application/json; charset=utf-8 1301.2996ms
+2025-11-15 07:56:32.712 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" received FIN.
+2025-11-15 07:56:32.712 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" is closed. The last processed stream ID was 1.
+2025-11-15 07:56:32.712 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:56:32.713 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJJ completed.
+2025-11-15 07:56:32.713 +00:00 [DBG] Connection id "0HNH43HBTDVJJ" stopped.
+2025-11-15 07:56:48.053 +00:00 [DBG] Connection id "0HNH43HBTDVJK" accepted.
+2025-11-15 07:56:48.053 +00:00 [DBG] Connection id "0HNH43HBTDVJK" started.
+2025-11-15 07:56:48.065 +00:00 [DBG] Connection 0HNH43HBTDVJK established using the following protocol: "Tls13"
+2025-11-15 07:56:48.114 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/repo-details?repoName=utility-master - null null
+2025-11-15 07:56:48.114 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/repo-details'
+2025-11-15 07:56:48.114 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application)' with route pattern 'api/GitHub/repo-details' is valid for the request path '/api/GitHub/repo-details'
+2025-11-15 07:56:48.114 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application)'
+2025-11-15 07:56:48.115 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application)'
+2025-11-15 07:56:48.127 +00:00 [INF] Route matched with {action = "GetRepoDetails", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRepoDetails(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:56:48.127 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:56:48.127 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:56:48.127 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:56:48.127 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:56:48.127 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:56:48.127 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:56:48.128 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:56:48.128 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:56:48.128 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-15 07:56:48.128 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:48.128 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:48.128 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:56:48.128 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-15 07:56:48.128 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application) - Validation state: "Valid"
+2025-11-15 07:56:48.143 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/utility-master
+2025-11-15 07:56:48.143 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/utility-master
+2025-11-15 07:56:48.241 +00:00 [INF] Received HTTP response headers after 97.3332ms - 404
+2025-11-15 07:56:48.241 +00:00 [INF] End processing HTTP request after 97.7089ms - 404
+2025-11-15 07:56:48.241 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 112.7404ms.
+2025-11-15 07:56:48.242 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:56:48.242 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:56:48.242 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:56:48.242 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:56:48.242 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-15 07:56:48.242 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-11-15 07:56:48.242 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application) in 114.7734ms
+2025-11-15 07:56:48.242 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepoDetails (Contoso application)'
+2025-11-15 07:56:48.242 +00:00 [INF] HTTP GET /api/GitHub/repo-details responded 404 in 127.6486 ms
+2025-11-15 07:56:48.242 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/repo-details?repoName=utility-master - 404 null text/plain; charset=utf-8 128.5835ms
+2025-11-15 07:56:52.715 +00:00 [DBG] Connection id "0HNH43HBTDVJK" received FIN.
+2025-11-15 07:56:52.715 +00:00 [DBG] Connection id "0HNH43HBTDVJK" is closed. The last processed stream ID was 1.
+2025-11-15 07:56:52.715 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJK completed.
+2025-11-15 07:56:52.715 +00:00 [DBG] Connection id "0HNH43HBTDVJK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:56:52.716 +00:00 [DBG] Connection id "0HNH43HBTDVJK" stopped.
+2025-11-15 07:57:11.860 +00:00 [DBG] Connection id "0HNH43HBTDVJL" accepted.
+2025-11-15 07:57:11.860 +00:00 [DBG] Connection id "0HNH43HBTDVJL" started.
+2025-11-15 07:57:11.872 +00:00 [DBG] Connection 0HNH43HBTDVJL established using the following protocol: "Tls13"
+2025-11-15 07:57:11.874 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/latest-build?repoName=contoso-application - null null
+2025-11-15 07:57:11.874 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/latest-build'
+2025-11-15 07:57:11.874 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application)' with route pattern 'api/GitHub/latest-build' is valid for the request path '/api/GitHub/latest-build'
+2025-11-15 07:57:11.874 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application)'
+2025-11-15 07:57:11.875 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application)'
+2025-11-15 07:57:11.882 +00:00 [INF] Route matched with {action = "GetLatestBuild", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLatestBuild(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:57:11.882 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:57:11.882 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:57:11.882 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:57:11.882 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:57:11.882 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:57:11.882 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:57:11.882 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:57:11.882 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:57:11.883 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-15 07:57:11.883 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:57:11.883 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:57:11.883 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:57:11.883 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-15 07:57:11.883 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application) - Validation state: "Valid"
+2025-11-15 07:57:11.886 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/actions/runs?per_page=1
+2025-11-15 07:57:11.886 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/contoso-application/actions/runs?per_page=1
+2025-11-15 07:57:12.020 +00:00 [INF] Received HTTP response headers after 134.1119ms - 200
+2025-11-15 07:57:12.020 +00:00 [INF] End processing HTTP request after 134.487ms - 200
+2025-11-15 07:57:12.364 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application) in 481.822ms
+2025-11-15 07:57:12.365 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild (Contoso application)'
+2025-11-15 07:57:12.366 +00:00 [ERR] HTTP GET /api/GitHub/latest-build responded 500 in 491.8406 ms
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Text.Json.JsonDocument.GetArrayIndexElement(Int32 currentIndex, Int32 arrayIndex)
+   at System.Text.Json.JsonElement.get_Item(Int32 index)
+   at VirtualAssistant.API.Services.GitHubService.GetLatestBuildStatus(String repo) in C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main\Services\GitHubService.cs:line 426
+   at VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild(String repoName) in C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main\Controllers\GitHubController.cs:line 235
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-15 07:57:12.410 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Text.Json.JsonDocument.GetArrayIndexElement(Int32 currentIndex, Int32 arrayIndex)
+   at System.Text.Json.JsonElement.get_Item(Int32 index)
+   at VirtualAssistant.API.Services.GitHubService.GetLatestBuildStatus(String repo) in C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main\Services\GitHubService.cs:line 426
+   at VirtualAssistant.API.Controllers.GitHubController.GetLatestBuild(String repoName) in C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main\Controllers\GitHubController.cs:line 235
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-15 07:57:12.426 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/latest-build?repoName=contoso-application - 500 null text/plain; charset=utf-8 552.6631ms
+2025-11-15 07:57:12.785 +00:00 [DBG] Connection id "0HNH43HBTDVJL" received FIN.
+2025-11-15 07:57:12.785 +00:00 [DBG] Connection id "0HNH43HBTDVJL" is closed. The last processed stream ID was 1.
+2025-11-15 07:57:12.786 +00:00 [DBG] Connection id "0HNH43HBTDVJL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-15 07:57:12.786 +00:00 [DBG] The connection queue processing loop for 0HNH43HBTDVJL completed.
+2025-11-15 07:57:12.786 +00:00 [DBG] Connection id "0HNH43HBTDVJL" stopped.
+2025-11-15 07:57:41.293 +00:00 [DBG] HttpMessageHandler expired after 120000ms for client 'GitHubService'
+2025-11-15 07:57:51.301 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:57:51.308 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0832ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:01.308 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:01.308 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0051ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:11.320 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:11.320 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0053ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:16.500 +00:00 [DBG] Connection id "0HNH43HBTDVJM" accepted.
+2025-11-15 07:58:16.501 +00:00 [DBG] Connection id "0HNH43HBTDVJM" started.
+2025-11-15 07:58:16.522 +00:00 [DBG] Connection 0HNH43HBTDVJM established using the following protocol: "Tls13"
+2025-11-15 07:58:16.527 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/api-endpoints?controller=github - null null
+2025-11-15 07:58:16.527 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/api-endpoints'
+2025-11-15 07:58:16.527 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)' with route pattern 'api/GitHub/api-endpoints' is valid for the request path '/api/GitHub/api-endpoints'
+2025-11-15 07:58:16.527 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:16.527 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:16.530 +00:00 [INF] Route matched with {action = "GetApiEndpoints", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetApiEndpoints(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:58:16.531 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:58:16.531 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:58:16.531 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:58:16.531 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:58:16.531 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:58:16.531 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:16.531 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:16.532 +00:00 [DBG] Attempting to bind parameter 'controller' of type 'System.String' ...
+2025-11-15 07:58:16.532 +00:00 [DBG] Attempting to bind parameter 'controller' of type 'System.String' using the name 'controller' in request data ...
+2025-11-15 07:58:16.532 +00:00 [DBG] Done attempting to bind parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:16.532 +00:00 [DBG] Done attempting to bind parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:16.532 +00:00 [DBG] Attempting to validate the bound parameter 'controller' of type 'System.String' ...
+2025-11-15 07:58:16.532 +00:00 [DBG] Done attempting to validate the bound parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:16.532 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application) - Validation state: "Valid"
+2025-11-15 07:58:16.534 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6814ms.
+2025-11-15 07:58:16.534 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:58:16.534 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:58:16.534 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:58:16.534 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:58:16.534 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:58:16.534 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ApiEndpointInfo, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-15 07:58:16.558 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application) in 26.8649ms
+2025-11-15 07:58:16.558 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:16.558 +00:00 [INF] HTTP GET /api/GitHub/api-endpoints responded 200 in 30.7147 ms
+2025-11-15 07:58:16.558 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/api-endpoints?controller=github - 200 null application/json; charset=utf-8 31.5283ms
+2025-11-15 07:58:21.320 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:21.320 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0046ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:29.035 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/api-endpoints?controller=githubcontroller - null null
+2025-11-15 07:58:29.036 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/api-endpoints'
+2025-11-15 07:58:29.036 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)' with route pattern 'api/GitHub/api-endpoints' is valid for the request path '/api/GitHub/api-endpoints'
+2025-11-15 07:58:29.036 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:29.036 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:29.036 +00:00 [INF] Route matched with {action = "GetApiEndpoints", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetApiEndpoints(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:58:29.036 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:58:29.037 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:58:29.037 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:58:29.037 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:58:29.037 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:58:29.037 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:29.037 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:29.037 +00:00 [DBG] Attempting to bind parameter 'controller' of type 'System.String' ...
+2025-11-15 07:58:29.037 +00:00 [DBG] Attempting to bind parameter 'controller' of type 'System.String' using the name 'controller' in request data ...
+2025-11-15 07:58:29.037 +00:00 [DBG] Done attempting to bind parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:29.037 +00:00 [DBG] Done attempting to bind parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:29.037 +00:00 [DBG] Attempting to validate the bound parameter 'controller' of type 'System.String' ...
+2025-11-15 07:58:29.037 +00:00 [DBG] Done attempting to validate the bound parameter 'controller' of type 'System.String'.
+2025-11-15 07:58:29.037 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application) - Validation state: "Valid"
+2025-11-15 07:58:29.037 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0187ms.
+2025-11-15 07:58:29.038 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:58:29.038 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:58:29.038 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:58:29.038 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:58:29.038 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:58:29.039 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ApiEndpointInfo, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-15 07:58:29.039 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application) in 2.2414ms
+2025-11-15 07:58:29.039 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetApiEndpoints (Contoso application)'
+2025-11-15 07:58:29.039 +00:00 [INF] HTTP GET /api/GitHub/api-endpoints responded 200 in 3.2032 ms
+2025-11-15 07:58:29.039 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/api-endpoints?controller=githubcontroller - 200 null application/json; charset=utf-8 4.0617ms
+2025-11-15 07:58:31.471 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:31.471 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:41.472 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:41.472 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:58:49.693 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/service-health?serviceName=githubservice - null null
+2025-11-15 07:58:49.694 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/service-health'
+2025-11-15 07:58:49.694 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application)' with route pattern 'api/GitHub/service-health' is valid for the request path '/api/GitHub/service-health'
+2025-11-15 07:58:49.694 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application)'
+2025-11-15 07:58:49.694 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application)'
+2025-11-15 07:58:49.699 +00:00 [INF] Route matched with {action = "GetServiceHealth", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetServiceHealth(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:58:49.699 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:58:49.699 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:58:49.699 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:58:49.699 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:58:49.699 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:58:49.699 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:49.700 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:58:49.700 +00:00 [DBG] Attempting to bind parameter 'serviceName' of type 'System.String' ...
+2025-11-15 07:58:49.700 +00:00 [DBG] Attempting to bind parameter 'serviceName' of type 'System.String' using the name 'serviceName' in request data ...
+2025-11-15 07:58:49.700 +00:00 [DBG] Done attempting to bind parameter 'serviceName' of type 'System.String'.
+2025-11-15 07:58:49.700 +00:00 [DBG] Done attempting to bind parameter 'serviceName' of type 'System.String'.
+2025-11-15 07:58:49.700 +00:00 [DBG] Attempting to validate the bound parameter 'serviceName' of type 'System.String' ...
+2025-11-15 07:58:49.701 +00:00 [DBG] Done attempting to validate the bound parameter 'serviceName' of type 'System.String'.
+2025-11-15 07:58:49.701 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application) - Validation state: "Valid"
+2025-11-15 07:58:49.702 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.9979ms.
+2025-11-15 07:58:49.702 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:58:49.702 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:58:49.702 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:58:49.702 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:58:49.702 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:58:49.702 +00:00 [INF] Executing OkObjectResult, writing value of type 'ServiceHealth'.
+2025-11-15 07:58:49.743 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application) in 43.6073ms
+2025-11-15 07:58:49.743 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetServiceHealth (Contoso application)'
+2025-11-15 07:58:49.743 +00:00 [INF] HTTP GET /api/GitHub/service-health responded 200 in 49.3280 ms
+2025-11-15 07:58:49.743 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/service-health?serviceName=githubservice - 200 null application/json; charset=utf-8 50.1421ms
+2025-11-15 07:58:51.594 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:58:51.594 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0057ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:01.595 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:01.595 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0151ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:11.595 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:11.596 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:21.596 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:21.596 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:28.180 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/GetRepositoryLink/Contoso-application - null null
+2025-11-15 07:59:28.180 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/GetRepositoryLink/Contoso-application'
+2025-11-15 07:59:28.180 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application)' with route pattern 'api/GitHub/GetRepositoryLink/{repoName}' is valid for the request path '/api/GitHub/GetRepositoryLink/Contoso-application'
+2025-11-15 07:59:28.180 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application)'
+2025-11-15 07:59:28.181 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application)'
+2025-11-15 07:59:28.190 +00:00 [INF] Route matched with {action = "GetRepositoryLink", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRepositoryLink(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:59:28.190 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:59:28.190 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:59:28.190 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:59:28.190 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:59:28.190 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:59:28.190 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:59:28.190 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:59:28.191 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:59:28.191 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-15 07:59:28.191 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:59:28.191 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-15 07:59:28.191 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-15 07:59:28.191 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-15 07:59:28.191 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application) - Validation state: "Valid"
+2025-11-15 07:59:28.194 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application
+2025-11-15 07:59:28.194 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application
+2025-11-15 07:59:28.596 +00:00 [INF] Received HTTP response headers after 401.5084ms - 200
+2025-11-15 07:59:28.596 +00:00 [INF] End processing HTTP request after 401.8322ms - 200
+2025-11-15 07:59:28.597 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 405.2723ms.
+2025-11-15 07:59:28.597 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:59:28.597 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:59:28.597 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:59:28.597 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:59:28.597 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:59:28.597 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Contoso_application.Models.RepoLink, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-15 07:59:28.609 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application) in 419.2408ms
+2025-11-15 07:59:28.609 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application)'
+2025-11-15 07:59:28.609 +00:00 [INF] HTTP GET /api/GitHub/GetRepositoryLink/Contoso-application responded 200 in 428.9293 ms
+2025-11-15 07:59:28.609 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/GetRepositoryLink/Contoso-application - 200 null application/json; charset=utf-8 429.88ms
+2025-11-15 07:59:31.597 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:31.599 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0065ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:38.989 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/deployment-urls/Contoso-application - null null
+2025-11-15 07:59:38.989 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/deployment-urls/Contoso-application'
+2025-11-15 07:59:38.989 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application)' with route pattern 'api/GitHub/deployment-urls/{repositoryName}' is valid for the request path '/api/GitHub/deployment-urls/Contoso-application'
+2025-11-15 07:59:38.989 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application)'
+2025-11-15 07:59:38.989 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application)'
+2025-11-15 07:59:39.056 +00:00 [INF] Route matched with {action = "GetDeploymentUrlsForRepository", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeploymentUrlsForRepository(System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 07:59:39.056 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 07:59:39.056 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 07:59:39.056 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 07:59:39.056 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 07:59:39.056 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 07:59:39.056 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:59:39.057 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 07:59:39.058 +00:00 [DBG] Attempting to bind parameter 'repositoryName' of type 'System.String' ...
+2025-11-15 07:59:39.058 +00:00 [DBG] Attempting to bind parameter 'repositoryName' of type 'System.String' using the name 'repositoryName' in request data ...
+2025-11-15 07:59:39.058 +00:00 [DBG] Done attempting to bind parameter 'repositoryName' of type 'System.String'.
+2025-11-15 07:59:39.058 +00:00 [DBG] Done attempting to bind parameter 'repositoryName' of type 'System.String'.
+2025-11-15 07:59:39.058 +00:00 [DBG] Attempting to validate the bound parameter 'repositoryName' of type 'System.String' ...
+2025-11-15 07:59:39.058 +00:00 [DBG] Done attempting to validate the bound parameter 'repositoryName' of type 'System.String'.
+2025-11-15 07:59:39.058 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application) - Validation state: "Valid"
+2025-11-15 07:59:39.059 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.7707ms.
+2025-11-15 07:59:39.059 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 07:59:39.059 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 07:59:39.060 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 07:59:39.060 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 07:59:39.060 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 07:59:39.060 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Contoso_application.Models.DeploymentEnvironment, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-15 07:59:39.066 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application) in 9.4504ms
+2025-11-15 07:59:39.066 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlsForRepository (Contoso application)'
+2025-11-15 07:59:39.066 +00:00 [INF] HTTP GET /api/GitHub/deployment-urls/Contoso-application responded 200 in 76.8407 ms
+2025-11-15 07:59:39.066 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/deployment-urls/Contoso-application - 200 null application/json; charset=utf-8 77.7229ms
+2025-11-15 07:59:41.600 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:41.600 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0044ms - processed: 0 items - remaining: 1 items
+2025-11-15 07:59:51.600 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 07:59:51.601 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items
+2025-11-15 08:00:01.152 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application - null null
+2025-11-15 08:00:01.152 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:01.152 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)' with route pattern 'api/GitHub/getModulesByRepoName' is valid for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:01.152 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:01.153 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:01.161 +00:00 [INF] Route matched with {action = "getModulesByRepoName", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getModulesByRepoName(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 08:00:01.161 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 08:00:01.161 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 08:00:01.162 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 08:00:01.162 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 08:00:01.162 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 08:00:01.162 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:01.162 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:01.162 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:01.162 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' using the name 'applicationName' in request data ...
+2025-11-15 08:00:01.162 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:01.162 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:01.163 +00:00 [DBG] Attempting to validate the bound parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:01.163 +00:00 [DBG] Done attempting to validate the bound parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:01.163 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:01.163 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name '' in request data ...
+2025-11-15 08:00:01.164 +00:00 [DBG] Could not find a value in the request with name '' for binding parameter 'query' of type 'System.String'.
+2025-11-15 08:00:01.164 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:01.164 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:01.164 +00:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:01.164 +00:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-11-15 08:00:01.164 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) - Validation state: "Valid"
+2025-11-15 08:00:01.170 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 5.5588ms.
+2025-11-15 08:00:01.170 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 08:00:01.170 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 08:00:01.170 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 08:00:01.170 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 08:00:01.170 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-15 08:00:01.170 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-11-15 08:00:01.172 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) in 10.197ms
+2025-11-15 08:00:01.172 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:01.172 +00:00 [INF] HTTP GET /api/GitHub/getModulesByRepoName responded 400 in 19.5448 ms
+2025-11-15 08:00:01.172 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application - 400 null text/plain; charset=utf-8 20.2728ms
+2025-11-15 08:00:01.636 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 08:00:01.637 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items
+2025-11-15 08:00:11.637 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-15 08:00:11.637 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0038ms - processed: 0 items - remaining: 1 items
+2025-11-15 08:00:16.540 +00:00 [DBG] HttpMessageHandler expired after 120000ms for client 'GitHubService'
+2025-11-15 08:00:21.637 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-15 08:00:21.637 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0076ms - processed: 0 items - remaining: 2 items
+2025-11-15 08:00:31.569 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application&query=dev - null null
+2025-11-15 08:00:31.569 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:31.569 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)' with route pattern 'api/GitHub/getModulesByRepoName' is valid for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:31.569 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:31.591 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:31.591 +00:00 [INF] Route matched with {action = "getModulesByRepoName", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getModulesByRepoName(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 08:00:31.591 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 08:00:31.591 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 08:00:31.592 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 08:00:31.592 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 08:00:31.592 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 08:00:31.592 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:31.593 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:31.593 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:31.593 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' using the name 'applicationName' in request data ...
+2025-11-15 08:00:31.593 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:31.593 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:31.593 +00:00 [DBG] Attempting to validate the bound parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:31.593 +00:00 [DBG] Done attempting to validate the bound parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:31.593 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:31.594 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-11-15 08:00:31.594 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:31.594 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:31.594 +00:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:31.594 +00:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-11-15 08:00:31.594 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) - Validation state: "Valid"
+2025-11-15 08:00:31.600 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application/contents
+2025-11-15 08:00:31.600 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application/contents
+2025-11-15 08:00:31.648 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-15 08:00:31.648 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0057ms - processed: 0 items - remaining: 2 items
+2025-11-15 08:00:31.845 +00:00 [INF] Received HTTP response headers after 244.4269ms - 200
+2025-11-15 08:00:31.845 +00:00 [INF] End processing HTTP request after 244.7387ms - 200
+2025-11-15 08:00:31.946 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 352.2429ms.
+2025-11-15 08:00:31.953 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 08:00:31.953 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 08:00:31.953 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 08:00:31.954 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 08:00:31.954 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-15 08:00:31.954 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-11-15 08:00:31.954 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) in 362.2527ms
+2025-11-15 08:00:31.954 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:31.954 +00:00 [INF] HTTP GET /api/GitHub/getModulesByRepoName responded 400 in 384.5605 ms
+2025-11-15 08:00:31.954 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application&query=dev - 400 null text/plain; charset=utf-8 385.4924ms
+2025-11-15 08:00:41.648 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-15 08:00:41.648 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0055ms - processed: 0 items - remaining: 2 items
+2025-11-15 08:00:44.230 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application&query=modules - null null
+2025-11-15 08:00:44.230 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:44.230 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)' with route pattern 'api/GitHub/getModulesByRepoName' is valid for the request path '/api/GitHub/getModulesByRepoName'
+2025-11-15 08:00:44.230 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:44.343 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:44.343 +00:00 [INF] Route matched with {action = "getModulesByRepoName", controller = "GitHub"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getModulesByRepoName(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-15 08:00:44.343 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-15 08:00:44.343 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-15 08:00:44.343 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-15 08:00:44.343 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-15 08:00:44.343 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-15 08:00:44.344 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:44.344 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to bind parameter 'applicationName' of type 'System.String' using the name 'applicationName' in request data ...
+2025-11-15 08:00:44.344 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:44.344 +00:00 [DBG] Done attempting to bind parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to validate the bound parameter 'applicationName' of type 'System.String' ...
+2025-11-15 08:00:44.344 +00:00 [DBG] Done attempting to validate the bound parameter 'applicationName' of type 'System.String'.
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to bind parameter 'query' of type 'System.String' using the name 'query' in request data ...
+2025-11-15 08:00:44.344 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:44.344 +00:00 [DBG] Done attempting to bind parameter 'query' of type 'System.String'.
+2025-11-15 08:00:44.344 +00:00 [DBG] Attempting to validate the bound parameter 'query' of type 'System.String' ...
+2025-11-15 08:00:44.345 +00:00 [DBG] Done attempting to validate the bound parameter 'query' of type 'System.String'.
+2025-11-15 08:00:44.345 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) - Validation state: "Valid"
+2025-11-15 08:00:44.345 +00:00 [INF] Start processing HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application/contents
+2025-11-15 08:00:44.345 +00:00 [INF] Sending HTTP request GET https://api.github.com/repos/rajkumarvaluemomentum/Contoso-application/contents
+2025-11-15 08:00:44.444 +00:00 [INF] Received HTTP response headers after 98.2966ms - 200
+2025-11-15 08:00:44.444 +00:00 [INF] End processing HTTP request after 98.6497ms - 200
+2025-11-15 08:00:44.446 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 100.9963ms.
+2025-11-15 08:00:44.446 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-15 08:00:44.446 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-15 08:00:44.446 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-15 08:00:44.446 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-15 08:00:44.455 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-15 08:00:44.456 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GitHubModuleInfo, Contoso application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-15 08:00:44.458 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application) in 114.557ms
+2025-11-15 08:00:44.458 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.getModulesByRepoName (Contoso application)'
+2025-11-15 08:00:44.458 +00:00 [INF] HTTP GET /api/GitHub/getModulesByRepoName responded 200 in 227.8272 ms
+2025-11-15 08:00:44.458 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/getModulesByRepoName?applicationName=Contoso-application&query=modules - 200 null application/json; charset=utf-8 228.7734ms
+2025-11-15 08:00:51.649 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-15 08:00:51.649 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 2 items
+2025-11-15 08:01:01.649 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-15 08:01:01.649 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0049ms - processed: 0 items - remaining: 2 items

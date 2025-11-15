@@ -1,7 +1,14 @@
 using VirtualAssistant.API.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, LoggerConfiguration loggerConfiguration) => {
+
+    loggerConfiguration
+    .ReadFrom.Configuration(context.Configuration)    // Extracts logging configuration from appsettings.json
+    .ReadFrom.Services(services); // Injects services (like IWebHostEnvironment) into Serilog's context for enriching logs
+});
 // Configure port for Render deployment (you already have this, which is good)
 if (!builder.Environment.IsDevelopment())
 {
@@ -35,8 +42,17 @@ builder.Services.AddHttpClient<GitHubService>()
 
 builder.Services.AddScoped<DeploymentService>();
 
+builder.Services.AddApplicationInsightsTelemetry();
+builder.Services.AddApplicationInsightsTelemetry(options =>
+{
+    options.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionString"];
+});
+
+
 
 var app = builder.Build();
+
+app.UseSerilogRequestLogging(); // Enable Serilog's request logging middleware
 
 // Use CORS policy
 app.UseCors("AllowAll");

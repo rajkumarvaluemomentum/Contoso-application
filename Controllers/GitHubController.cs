@@ -254,6 +254,31 @@ namespace VirtualAssistant.API.Controllers
             var health = _gitHubService.GetServiceHealth(serviceName);
             return Ok(health);
         }
+
+        /// <summary>
+        /// Get API endpoints information
+        /// </summary>
+        [HttpGet("api-endpoints")]
+        public IActionResult GetApiEndpoints([FromQuery] string controller = null)
+        {
+            try
+            {
+                var endpoints = _gitHubService.GetApiEndpoints(controller);
+                return Ok(new
+                {
+                    success = true,
+                    count = endpoints.Count,
+                    controller = controller,
+                    data = endpoints
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving API endpoints");
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
     }
 }
   

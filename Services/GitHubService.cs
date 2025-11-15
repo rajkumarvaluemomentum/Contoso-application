@@ -1,8 +1,10 @@
 ﻿using Contoso_application.Models;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using VirtualAssistant.API.Models;
 
 
 namespace VirtualAssistant.API.Services
@@ -12,6 +14,7 @@ namespace VirtualAssistant.API.Services
         private readonly HttpClient _httpClient;
         private readonly string _token;
         private readonly string _username;
+        private readonly List<CodeModuleInfo> _modules;
         private readonly Dictionary<string, List<DeploymentInfo>> _deploymentData = new()
     {
         {
@@ -31,7 +34,7 @@ namespace VirtualAssistant.API.Services
             // Get credentials from environment variables first, then configuration
             _token = Environment.GetEnvironmentVariable("GITHUB_TOKEN") ?? configuration["GitHub:Token"];
             _username = Environment.GetEnvironmentVariable("GITHUB_USERNAME") ?? configuration["GitHub:Username"];
- 
+            _modules = new List<CodeModuleInfo>();
             _httpClient.BaseAddress = new Uri("https://api.github.com/");
             _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("VirtualAssistantAPI", "1.0"));
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
@@ -451,5 +454,23 @@ namespace VirtualAssistant.API.Services
                 CheckedAt = DateTime.UtcNow
             };
         }
+        /// <summary>
+        /// Get API endpoints for a specific controller
+        /// </summary>
+        public List<ApiEndpointInfo> GetApiEndpoints(string controllerName = null)
+        {
+            var endpoints = new List<ApiEndpointInfo>();
+
+            foreach (var module in _modules)
+            {
+                if (controllerName == null || module.ApiEndpoints.Any(e => e.Controller.Contains(controllerName, StringComparison.OrdinalIgnoreCase)))
+                {
+                    endpoints.AddRange(module.ApiEndpoints);
+                }
+            }
+
+            return endpoints;
+        }
+
     }
 }
