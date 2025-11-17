@@ -1,4 +1,4 @@
-using Contoso_application.Models;
+Ôªøusing Contoso_application.Models;
 using Microsoft.AspNetCore.Mvc;
 using Octokit;
 using System.Reflection.Metadata;
@@ -53,46 +53,27 @@ namespace VirtualAssistant.API.Controllers
         [HttpGet("GetRepositoryLink/{repoName}")]
         public async Task<IActionResult> GetRepositoryLink(string repoName)
         {
-            if (string.IsNullOrEmpty(repoName))
-            {
+            if (string.IsNullOrWhiteSpace(repoName))
                 return BadRequest("Repository name cannot be null or empty.");
-            }
 
-            // Check if the repository exists
-            var repoLink = await _gitHubService.GetRepositoryLinkAsync(repoName);
+            var repoResponse = await _gitHubService.GetRepositoryLinkAsync(repoName);
 
-            if (repoLink == null)
-            {
+            if (repoResponse == null || string.IsNullOrEmpty(repoResponse.Result))
                 return NotFound($"Repository '{repoName}' not found on GitHub.");
-            }
 
-            // Return the simplified structure with only "result" and "id"
-            return Ok(new { RepoName = repoName, RepoLink = repoLink });
+            // Return JSON with "RepositoryLink"
+            return Ok(new { RepositoryLink = repoResponse.Result });
         }
+
         #endregion
 
 
-        #region // Unified endpoint to fetch deployment URLs for a given repository
-        [HttpGet("deployment-urls/{repositoryName}")]
-        public IActionResult GetDeploymentUrlsForRepository(string repositoryName)
-        {
-            if (string.IsNullOrEmpty(repositoryName))
-                return BadRequest("Repository name must be provided.");
 
-            var deploymentDetails = _deploymentService.GetStaticDeploymentUrls();
-
-            if (deploymentDetails == null)
-                return NotFound($"Deployment details for repository '{repositoryName}' not found.");
-
-            return Ok(deploymentDetails);
-        }
-
-        #endregion modules , microservices list,module that handles document upload
         //GET /api/github/query?applicationName=Contoso-application&query=microservices
         /// <summary>
-        /// For Contoso application I need the list of modules.î
-        //ìFor Contoso application I need the module that handles document upload.î
-        //ìFor Contoso application I need the microservices list
+        /// For Contoso application I need the list of modules.‚Äù
+        //‚ÄúFor Contoso application I need the module that handles document upload.‚Äù
+        //‚ÄúFor Contoso application I need the microservices list
         /// </summary>
         /// <param name="applicationName"></param>
         /// <param name="query"></param>
@@ -277,6 +258,24 @@ namespace VirtualAssistant.API.Controllers
                 _logger.LogError(ex, "Error retrieving API endpoints");
                 return StatusCode(500, new { error = ex.Message });
             }
+        }
+
+        /// <summary>
+        /// Get Deployment URL by Repo & Environment
+        /// Example: GET /api/deployment/url?repoName=Contoso-application&envName=dev
+        /// </summary>
+        [HttpGet("GetDeploymentUrlByreponadevn")]
+        public IActionResult GetDeploymentUrlByreponadevn([FromQuery] string repoName, [FromQuery] string envName)
+        {
+            if (string.IsNullOrWhiteSpace(repoName) || string.IsNullOrWhiteSpace(envName))
+                return BadRequest("repoName and envName are required.");
+
+            var url = _deploymentService.GetDeploymentUrl(repoName, envName);
+
+            if (url == null)
+                return NotFound("No matching repository or environment found.");
+
+            return Ok(new { deploymentUrl = url });  // ‚úî JSON response
         }
 
     }
