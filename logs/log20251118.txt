@@ -172,3 +172,189 @@ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport 
 2025-11-18 07:01:53.088 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetRepositoryLink (Contoso application)'
 2025-11-18 07:01:53.089 +00:00 [INF] HTTP GET /api/GitHub/GetRepositoryLink/contoso-application responded 200 in 560.1738 ms
 2025-11-18 07:01:53.089 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/GetRepositoryLink/contoso-application - 200 null application/json; charset=utf-8 579.1357ms
+2025-11-18 07:09:04.868 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-18 07:09:04.999 +00:00 [DBG] Hosting starting
+2025-11-18 07:09:05.018 +00:00 [DBG] Middleware loaded
+2025-11-18 07:09:05.020 +00:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16523 B).
+2025-11-18 07:09:05.021 +00:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-18 07:09:05.720 +00:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-18 07:09:05.806 +00:00 [INF] Now listening on: https://localhost:7206
+2025-11-18 07:09:05.807 +00:00 [INF] Now listening on: http://localhost:5206
+2025-11-18 07:09:05.807 +00:00 [DBG] Loaded hosting startup assembly Contoso application
+2025-11-18 07:09:05.807 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-18 07:09:05.807 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-18 07:09:05.807 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-18 07:09:06.297 +00:00 [DBG] Connection id "0HNH6E5ECFS4A" accepted.
+2025-11-18 07:09:06.309 +00:00 [DBG] Connection id "0HNH6E5ECFS4B" received FIN.
+2025-11-18 07:09:06.330 +00:00 [DBG] Connection id "0HNH6E5ECFS4B" accepted.
+2025-11-18 07:09:06.331 +00:00 [DBG] Connection id "0HNH6E5ECFS4A" received FIN.
+2025-11-18 07:09:06.332 +00:00 [DBG] Connection id "0HNH6E5ECFS4A" started.
+2025-11-18 07:09:06.914 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:09:07.813 +00:00 [DBG] Connection id "0HNH6E5ECFS4B" started.
+2025-11-18 07:09:07.861 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" accepted.
+2025-11-18 07:09:07.926 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" started.
+2025-11-18 07:09:07.939 +00:00 [DBG] Connection id "0HNH6E5ECFS4A" stopped.
+2025-11-18 07:09:07.940 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:09:07.941 +00:00 [DBG] Connection id "0HNH6E5ECFS4B" stopped.
+2025-11-18 07:09:07.988 +00:00 [DBG] Connection id "0HNH6E5ECFS4A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:09:07.991 +00:00 [DBG] Connection id "0HNH6E5ECFS4B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:09:07.994 +00:00 [DBG] Connection id "0HNH6E5ECFS4D" accepted.
+2025-11-18 07:09:07.995 +00:00 [DBG] Connection id "0HNH6E5ECFS4D" started.
+2025-11-18 07:09:08.016 +00:00 [DBG] Connection id "0HNH6E5ECFS4D" received FIN.
+2025-11-18 07:09:08.021 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:09:08.022 +00:00 [DBG] Connection id "0HNH6E5ECFS4D" stopped.
+2025-11-18 07:09:08.028 +00:00 [DBG] Connection 0HNH6E5ECFS4C established using the following protocol: "Tls13"
+2025-11-18 07:09:08.030 +00:00 [DBG] Connection id "0HNH6E5ECFS4D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:09:08.034 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 07:09:08.035 +00:00 [INF] Hosting environment: Development
+2025-11-18 07:09:08.035 +00:00 [INF] Content root path: C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main
+2025-11-18 07:09:08.035 +00:00 [DBG] Hosting started
+2025-11-18 07:09:08.195 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-11-18 07:09:08.222 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 07:09:08.265 +00:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-18 07:09:08.271 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 104.3118ms
+2025-11-18 07:09:08.462 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 299.918ms
+2025-11-18 07:09:08.755 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-11-18 07:09:08.772 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-18 07:09:08.854 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-18 07:09:08.858 +00:00 [DBG] Request did not match any endpoints
+2025-11-18 07:09:08.932 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 65.6187 ms
+2025-11-18 07:09:08.937 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 182.6273ms
+2025-11-18 07:10:29.093 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" received FIN.
+2025-11-18 07:10:29.105 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" is closed. The last processed stream ID was 5.
+2025-11-18 07:10:29.106 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:10:29.113 +00:00 [DBG] The connection queue processing loop for 0HNH6E5ECFS4C completed.
+2025-11-18 07:10:29.122 +00:00 [DBG] Connection id "0HNH6E5ECFS4C" stopped.
+2025-11-18 07:11:03.048 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-18 07:11:03.183 +00:00 [DBG] Hosting starting
+2025-11-18 07:11:03.206 +00:00 [DBG] Middleware loaded
+2025-11-18 07:11:03.209 +00:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16523 B).
+2025-11-18 07:11:03.210 +00:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-18 07:11:04.078 +00:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-18 07:11:04.206 +00:00 [INF] Now listening on: https://localhost:7206
+2025-11-18 07:11:04.207 +00:00 [INF] Now listening on: http://localhost:5206
+2025-11-18 07:11:04.207 +00:00 [DBG] Loaded hosting startup assembly Contoso application
+2025-11-18 07:11:04.207 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-18 07:11:04.207 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-18 07:11:04.207 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-18 07:11:04.349 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 07:11:04.350 +00:00 [INF] Hosting environment: Development
+2025-11-18 07:11:04.350 +00:00 [INF] Content root path: C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main
+2025-11-18 07:11:04.350 +00:00 [DBG] Hosting started
+2025-11-18 07:11:04.435 +00:00 [DBG] Connection id "0HNH6E6HJ4PN0" accepted.
+2025-11-18 07:11:04.438 +00:00 [DBG] Connection id "0HNH6E6HJ4PN0" started.
+2025-11-18 07:11:04.459 +00:00 [DBG] Connection id "0HNH6E6HJ4PN1" accepted.
+2025-11-18 07:11:04.460 +00:00 [DBG] Connection id "0HNH6E6HJ4PN1" started.
+2025-11-18 07:11:04.492 +00:00 [DBG] Connection id "0HNH6E6HJ4PN0" received FIN.
+2025-11-18 07:11:04.493 +00:00 [DBG] Connection id "0HNH6E6HJ4PN1" received FIN.
+2025-11-18 07:11:04.519 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:11:04.659 +00:00 [DBG] Connection id "0HNH6E6HJ4PN0" stopped.
+2025-11-18 07:11:04.675 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:11:04.676 +00:00 [DBG] Connection id "0HNH6E6HJ4PN1" stopped.
+2025-11-18 07:11:04.683 +00:00 [DBG] Connection id "0HNH6E6HJ4PN0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:11:04.685 +00:00 [DBG] Connection id "0HNH6E6HJ4PN1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:11:04.948 +00:00 [DBG] Connection id "0HNH6E6HJ4PN2" accepted.
+2025-11-18 07:11:05.119 +00:00 [DBG] Connection id "0HNH6E6HJ4PN2" started.
+2025-11-18 07:11:05.378 +00:00 [DBG] Connection id "0HNH6E6HJ4PN3" accepted.
+2025-11-18 07:11:05.406 +00:00 [DBG] Connection id "0HNH6E6HJ4PN3" started.
+2025-11-18 07:11:05.477 +00:00 [DBG] Connection id "0HNH6E6HJ4PN3" reset.
+2025-11-18 07:11:05.497 +00:00 [DBG] Connection 0HNH6E6HJ4PN2 established using the following protocol: "Tls13"
+2025-11-18 07:11:05.506 +00:00 [DBG] Failed to authenticate HTTPS connection.
+Microsoft.AspNetCore.Connections.ConnectionResetException: An established connection was aborted by the software in your host machine.
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:11:05.510 +00:00 [DBG] Connection id "0HNH6E6HJ4PN3" stopped.
+2025-11-18 07:11:05.511 +00:00 [DBG] Connection id "0HNH6E6HJ4PN3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:11:05.652 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 07:11:05.657 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-11-18 07:11:05.744 +00:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-18 07:11:05.753 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 126.8517ms
+2025-11-18 07:11:05.907 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 279.8007ms
+2025-11-18 07:11:06.344 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-11-18 07:11:06.352 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-18 07:11:06.433 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-18 07:11:06.434 +00:00 [DBG] Request did not match any endpoints
+2025-11-18 07:11:06.473 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 28.9465 ms
+2025-11-18 07:11:06.478 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.2277ms
+2025-11-18 07:11:32.060 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/GetDeploymentUrlByreponadevn?repoName=contoso-application&envName=dev - null null
+2025-11-18 07:11:32.068 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/GetDeploymentUrlByreponadevn'
+2025-11-18 07:11:32.074 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)' with route pattern 'api/GitHub/GetDeploymentUrlByreponadevn' is valid for the request path '/api/GitHub/GetDeploymentUrlByreponadevn'
+2025-11-18 07:11:32.075 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:11:32.090 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:11:32.123 +00:00 [INF] Route matched with {action = "GetDeploymentUrlByreponadevn", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeploymentUrlByreponadevn(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-18 07:11:32.125 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 07:11:32.125 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 07:11:32.125 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 07:11:32.125 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 07:11:32.125 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 07:11:32.127 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-18 07:11:32.134 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-18 07:11:32.182 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-18 07:11:32.185 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-18 07:11:32.185 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-18 07:11:32.186 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-18 07:11:32.186 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-18 07:11:32.188 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-18 07:11:32.189 +00:00 [DBG] Attempting to bind parameter 'envName' of type 'System.String' ...
+2025-11-18 07:11:32.189 +00:00 [DBG] Attempting to bind parameter 'envName' of type 'System.String' using the name 'envName' in request data ...
+2025-11-18 07:11:32.189 +00:00 [DBG] Done attempting to bind parameter 'envName' of type 'System.String'.
+2025-11-18 07:11:32.189 +00:00 [DBG] Done attempting to bind parameter 'envName' of type 'System.String'.
+2025-11-18 07:11:32.189 +00:00 [DBG] Attempting to validate the bound parameter 'envName' of type 'System.String' ...
+2025-11-18 07:11:32.190 +00:00 [DBG] Done attempting to validate the bound parameter 'envName' of type 'System.String'.
+2025-11-18 07:11:32.194 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application) - Validation state: "Valid"
+2025-11-18 07:11:32.198 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0193ms.
+2025-11-18 07:11:32.207 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-18 07:11:32.210 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-18 07:11:32.210 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 07:11:32.210 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 07:11:32.211 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-18 07:11:32.211 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-11-18 07:11:32.217 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application) in 86.9477ms
+2025-11-18 07:11:32.217 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:11:32.217 +00:00 [INF] HTTP GET /api/GitHub/GetDeploymentUrlByreponadevn responded 200 in 135.0253 ms
+2025-11-18 07:11:32.218 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/GetDeploymentUrlByreponadevn?repoName=contoso-application&envName=dev - 200 null text/plain; charset=utf-8 157.8717ms
+2025-11-18 07:13:32.144 +00:00 [DBG] HttpMessageHandler expired after 120000ms for client 'GitHubService'
+2025-11-18 07:13:42.149 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-18 07:13:42.152 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0881ms - processed: 0 items - remaining: 1 items
+2025-11-18 07:13:52.157 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-18 07:13:52.158 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0114ms - processed: 0 items - remaining: 1 items
+2025-11-18 07:14:02.187 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-18 07:14:02.187 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0058ms - processed: 0 items - remaining: 1 items
+2025-11-18 07:14:12.188 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-18 07:14:12.188 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.006ms - processed: 0 items - remaining: 1 items
