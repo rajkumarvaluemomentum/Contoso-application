@@ -280,7 +280,8 @@ namespace VirtualAssistant.API.Controllers
             if (url == null)
                 return NotFound("No matching repository or environment found.");
 
-            return Ok(url);  // ✔ Returns only the plain URL string
+            // Return JSON object
+            return Ok(new { developmentUrl = url });
         }
 
     }
