@@ -64,7 +64,7 @@ namespace VirtualAssistant.API.Controllers
             // Return JSON with repo name & link
             return Ok(new
             {
-                RepositoryName = repoName,
+               // RepositoryName = repoName,
                 RepositoryLink = repoResponse.Result
             });
         }
