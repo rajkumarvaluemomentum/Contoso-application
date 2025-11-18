@@ -358,3 +358,90 @@ Microsoft.AspNetCore.Connections.ConnectionResetException: An established connec
 2025-11-18 07:14:02.187 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0058ms - processed: 0 items - remaining: 1 items
 2025-11-18 07:14:12.188 +00:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
 2025-11-18 07:14:12.188 +00:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.006ms - processed: 0 items - remaining: 1 items
+2025-11-18 07:20:28.118 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-18 07:20:28.211 +00:00 [DBG] Hosting starting
+2025-11-18 07:20:28.230 +00:00 [DBG] Middleware loaded
+2025-11-18 07:20:28.232 +00:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16523 B).
+2025-11-18 07:20:28.233 +00:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-18 07:20:28.551 +00:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-18 07:20:28.706 +00:00 [INF] Now listening on: https://localhost:7206
+2025-11-18 07:20:28.707 +00:00 [INF] Now listening on: http://localhost:5206
+2025-11-18 07:20:28.707 +00:00 [DBG] Loaded hosting startup assembly Contoso application
+2025-11-18 07:20:28.707 +00:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-18 07:20:28.707 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-18 07:20:28.707 +00:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-18 07:20:28.934 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 07:20:28.934 +00:00 [INF] Hosting environment: Development
+2025-11-18 07:20:28.935 +00:00 [INF] Content root path: C:\Users\VMBot\Downloads\Virtual_Assistant_Bot-main\Virtual_Assistant_Bot-main
+2025-11-18 07:20:28.935 +00:00 [DBG] Hosting started
+2025-11-18 07:20:29.122 +00:00 [DBG] Connection id "0HNH6EBPSDNEC" received FIN.
+2025-11-18 07:20:29.130 +00:00 [DBG] Connection id "0HNH6EBPSDNEC" accepted.
+2025-11-18 07:20:29.131 +00:00 [DBG] Connection id "0HNH6EBPSDNED" received FIN.
+2025-11-18 07:20:29.131 +00:00 [DBG] Connection id "0HNH6EBPSDNED" accepted.
+2025-11-18 07:20:29.132 +00:00 [DBG] Connection id "0HNH6EBPSDNEC" started.
+2025-11-18 07:20:29.136 +00:00 [DBG] Connection id "0HNH6EBPSDNED" started.
+2025-11-18 07:20:29.143 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:20:29.157 +00:00 [DBG] Connection id "0HNH6EBPSDNEC" stopped.
+2025-11-18 07:20:29.165 +00:00 [DBG] Connection id "0HNH6EBPSDNEC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:20:29.144 +00:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-18 07:20:29.167 +00:00 [DBG] Connection id "0HNH6EBPSDNED" stopped.
+2025-11-18 07:20:29.167 +00:00 [DBG] Connection id "0HNH6EBPSDNED" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-18 07:20:29.298 +00:00 [DBG] Connection id "0HNH6EBPSDNEE" accepted.
+2025-11-18 07:20:29.299 +00:00 [DBG] Connection id "0HNH6EBPSDNEE" started.
+2025-11-18 07:20:29.366 +00:00 [DBG] Connection 0HNH6EBPSDNEE established using the following protocol: "Tls13"
+2025-11-18 07:20:29.536 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-11-18 07:20:29.536 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-18 07:20:29.638 +00:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-18 07:20:29.640 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 107.7044ms
+2025-11-18 07:20:30.139 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 606.6567ms
+2025-11-18 07:20:30.267 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-11-18 07:20:30.282 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-18 07:20:30.324 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-18 07:20:30.324 +00:00 [DBG] Request did not match any endpoints
+2025-11-18 07:20:30.358 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.1275 ms
+2025-11-18 07:20:30.364 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.7785ms
+2025-11-18 07:20:51.036 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/GitHub/GetDeploymentUrlByreponadevn?repoName=contoso-application&envName=dev - null null
+2025-11-18 07:20:51.076 +00:00 [DBG] 1 candidate(s) found for the request path '/api/GitHub/GetDeploymentUrlByreponadevn'
+2025-11-18 07:20:51.095 +00:00 [DBG] Endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)' with route pattern 'api/GitHub/GetDeploymentUrlByreponadevn' is valid for the request path '/api/GitHub/GetDeploymentUrlByreponadevn'
+2025-11-18 07:20:51.096 +00:00 [DBG] Request matched endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:20:51.106 +00:00 [INF] Executing endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:20:51.133 +00:00 [INF] Route matched with {action = "GetDeploymentUrlByreponadevn", controller = "GitHub"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeploymentUrlByreponadevn(System.String, System.String) on controller VirtualAssistant.API.Controllers.GitHubController (Contoso application).
+2025-11-18 07:20:51.134 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-18 07:20:51.134 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-18 07:20:51.135 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-18 07:20:51.135 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-18 07:20:51.135 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-18 07:20:51.137 +00:00 [DBG] Executing controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-18 07:20:51.142 +00:00 [DBG] Executed controller factory for controller VirtualAssistant.API.Controllers.GitHubController (Contoso application)
+2025-11-18 07:20:51.156 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' ...
+2025-11-18 07:20:51.158 +00:00 [DBG] Attempting to bind parameter 'repoName' of type 'System.String' using the name 'repoName' in request data ...
+2025-11-18 07:20:51.158 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-18 07:20:51.159 +00:00 [DBG] Done attempting to bind parameter 'repoName' of type 'System.String'.
+2025-11-18 07:20:51.159 +00:00 [DBG] Attempting to validate the bound parameter 'repoName' of type 'System.String' ...
+2025-11-18 07:20:51.160 +00:00 [DBG] Done attempting to validate the bound parameter 'repoName' of type 'System.String'.
+2025-11-18 07:20:51.161 +00:00 [DBG] Attempting to bind parameter 'envName' of type 'System.String' ...
+2025-11-18 07:20:51.161 +00:00 [DBG] Attempting to bind parameter 'envName' of type 'System.String' using the name 'envName' in request data ...
+2025-11-18 07:20:51.161 +00:00 [DBG] Done attempting to bind parameter 'envName' of type 'System.String'.
+2025-11-18 07:20:51.161 +00:00 [DBG] Done attempting to bind parameter 'envName' of type 'System.String'.
+2025-11-18 07:20:51.161 +00:00 [DBG] Attempting to validate the bound parameter 'envName' of type 'System.String' ...
+2025-11-18 07:20:51.162 +00:00 [DBG] Done attempting to validate the bound parameter 'envName' of type 'System.String'.
+2025-11-18 07:20:51.165 +00:00 [INF] Executing action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application) - Validation state: "Valid"
+2025-11-18 07:20:51.169 +00:00 [INF] Executed action method VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.9731ms.
+2025-11-18 07:20:51.171 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-18 07:20:51.172 +00:00 [DBG] No information found on request to perform content negotiation.
+2025-11-18 07:20:51.172 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-18 07:20:51.172 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-18 07:20:51.172 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-18 07:20:51.173 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-18 07:20:51.193 +00:00 [INF] Executed action VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application) in 53.2544ms
+2025-11-18 07:20:51.194 +00:00 [INF] Executed endpoint 'VirtualAssistant.API.Controllers.GitHubController.GetDeploymentUrlByreponadevn (Contoso application)'
+2025-11-18 07:20:51.194 +00:00 [INF] HTTP GET /api/GitHub/GetDeploymentUrlByreponadevn responded 200 in 95.7843 ms
+2025-11-18 07:20:51.194 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/GitHub/GetDeploymentUrlByreponadevn?repoName=contoso-application&envName=dev - 200 null application/json; charset=utf-8 157.9573ms
