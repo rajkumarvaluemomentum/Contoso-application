@@ -61,9 +61,14 @@ namespace VirtualAssistant.API.Controllers
             if (repoResponse == null || string.IsNullOrEmpty(repoResponse.Result))
                 return NotFound($"Repository '{repoName}' not found on GitHub.");
 
-            // Return JSON with "RepositoryLink"
-            return Ok(new { RepositoryLink = repoResponse.Result });
+            // Return JSON with repo name & link
+            return Ok(new
+            {
+                RepositoryName = repoName,
+                RepositoryLink = repoResponse.Result
+            });
         }
+
 
         #endregion
 
